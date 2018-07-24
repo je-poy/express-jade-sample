@@ -6,6 +6,9 @@ router.route('/')
 
 	.get(function(req, res, next) {
 	  res.render('sample', { message: 'Hello', name: 'Jeff' });
+	})
+	.post('/', function(req, res, next) {
+	  console.log('added post');
 	});
 
 module.exports = router;
